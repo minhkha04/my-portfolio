@@ -51,7 +51,7 @@ const AboutMe = () => {
             iconUrl={assets.icon_code}
           />
           <div className={'w-full mt-5 text-white '}>
-            <p className="text-2xl font-bold">
+            <p className="text-2xl font-bold text-red-500">
               As a developer,
             </p>
             <TextType
@@ -67,10 +67,10 @@ const AboutMe = () => {
             />
           </div>
         </div>
-        <div className={'w-3/4 flex flex-col items-center pl-5'}>
+        <div className={'w-3/4 flex flex-col items-center pl-10 gap-10'}>
           <div>
             <p className="text-4xl font-bold text-white mb-4">My Skills</p>
-            <div className="overflow-hidden w-full relative max-w-6xl mx-auto" onMouseEnter={() => setStopScroll(true)}
+            <div className="overflow-hidden w-full relative max-w-6xl mx-auto pt-10" onMouseEnter={() => setStopScroll(true)}
                  onMouseLeave={() => setStopScroll(false)}>
               <div
                 className="flex w-fit animate-marquee"
@@ -92,7 +92,7 @@ const AboutMe = () => {
           </div>
           <div className={'h-[500px] w-full'}>
             <p className="text-4xl font-bold text-white mb-4">My Hobbies</p>
-            <div className={'flex flex-row gap-10 justify-center'} >
+            <div className={'flex flex-row gap-10 justify-center pt-10'} >
               <PixelCard variant="blue">
                 <div className={'absolute flex flex-col items-center justify-center top-0 bottom-0'}>
                   <img src={assets.icon_code2} alt={'react'} className={'w-36 h-36'}/>

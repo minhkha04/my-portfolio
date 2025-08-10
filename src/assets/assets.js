@@ -11,6 +11,7 @@ import icon_spring from './icon_spring.png'
 import icon_code2 from './icon_code2.png'
 import icon_sport from './icon_sport.png'
 import icon_game from './icon_game.png'
+import icon_github from './icon_github.png'
 
 export const assets = {
   logo,
@@ -26,4 +27,5 @@ export const assets = {
   icon_code2,
   icon_sport,
   icon_game,
+  icon_github,
 }

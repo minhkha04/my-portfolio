@@ -61,7 +61,6 @@ const Introduction = () => {
       </div>
       {/*right*/}
       <div className="w-1/2">
-
       </div>
     </div>
   )

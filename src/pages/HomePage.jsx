@@ -5,6 +5,7 @@ import ShinyText from '../components/visuals/ShinyText.jsx'
 import Introduction from '../components/Introduction.jsx'
 import Lanyard from '../components/visuals/Lanyard.jsx'
 import AboutMe from '../components/AboutMe.jsx'
+import Project from '../components/Project.jsx'
 
 const HomePage = () => {
 
@@ -114,8 +115,9 @@ const HomePage = () => {
       </nav>
       {/*content*/}
       <div style={{ paddingTop: navHeight }}>
-        <Introduction />
-        <AboutMe />
+        <Introduction/>
+        <AboutMe/>
+        <Project/>
       </div>
     </div>
   )
