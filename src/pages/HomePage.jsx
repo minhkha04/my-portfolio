@@ -3,7 +3,8 @@ import Galaxy from '.././components/visuals/GalaxyBackground.jsx'
 import GradientText from '../components/visuals/GradientText.jsx'
 import ShinyText from '../components/visuals/ShinyText.jsx'
 import Introduction from '../components/Introduction.jsx'
-import Lanyard from '../components/Lanyard.jsx'
+import Lanyard from '../components/visuals/Lanyard.jsx'
+import AboutMe from '../components/AboutMe.jsx'
 
 const HomePage = () => {
 
@@ -12,8 +13,7 @@ const HomePage = () => {
   const [hideLeft, setHideLeft] = useState(false)
 
   const handleClickNav = (e, id) => {
-    document.getElementById(id)?.scrollIntoView({
-    })
+    document.getElementById(id)?.scrollIntoView({})
   }
 
   useEffect(() => {
@@ -66,8 +66,8 @@ const HomePage = () => {
         <div
           className={`hidden md:flex items-center gap-6 text-4xl font-semibold ${hideLeft ? 'bg-gray-500/30 rounded-md p-2 text-5xl duration-1000' : 'duration-500'}`}>
           <a onClick={() => {
-            scrollTo(0,0)
-            }
+            scrollTo(0, 0)
+          }
           } className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Introduction" disabled={false} speed={1.5} className=""/>
@@ -78,7 +78,7 @@ const HomePage = () => {
           </span>
           </a>
           <a onClick={(e) => {
-            handleClickNav(e, 'introduction')
+            handleClickNav(e, 'aboutMe')
           }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="About me" disabled={false} speed={1.5} className=""/>
@@ -114,7 +114,8 @@ const HomePage = () => {
       </nav>
       {/*content*/}
       <div style={{ paddingTop: navHeight }}>
-        <Introduction/>
+        <Introduction />
+        <AboutMe />
       </div>
     </div>
   )

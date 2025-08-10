@@ -58,10 +58,16 @@ export default {
           "95%": { "clip-path": "inset(25% 0 35% 0)" },
           "100%": { "clip-path": "inset(30% 0 40% 0)" },
         },
+        marqueeScroll: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
       },
+
       animation: {
         gradient: 'gradient 8s linear infinite',
         shine: 'shine 5s linear infinite',
+        marquee: 'marqueeScroll linear infinite',
         'star-movement-bottom': 'star-movement-bottom linear infinite alternate',
         'star-movement-top': 'star-movement-top linear infinite alternate',
         "glitch-after": "glitch var(--after-duration) infinite linear alternate-reverse",

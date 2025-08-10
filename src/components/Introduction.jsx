@@ -6,9 +6,8 @@ import StarBorder from './visuals/StarBorder.jsx'
 const Introduction = () => {
 
   const CV_URL = import.meta.env.VITE_CV_URL
-
   return (
-    <div className={`container flex gap-1 h-[calc(100vh-160px)]`}>
+    <div className={`container flex gap-1 h-[calc(100vh-128px)]`}>
       {/*left*/}
       <div className="w-1/2 text-8xl font-bold text-white flex flex-col justify-center relative z-2">
         <h1>Hi!</h1>
