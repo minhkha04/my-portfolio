@@ -1,11 +1,37 @@
 import HomePage from './pages/HomePage.jsx'
-import Lanyard from './components/Lanyard.jsx'
 
 function App () {
   return (
     <>
-
       <HomePage/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/> <br/>
+      <br/>
+      <br/>
+      <br/> <br/>
+      <br/>
+      <br/>
+      <br/> <br/>
+      <br/>
+      <br/>
+      <br/> <br/>
+      <br/>
+      <br/>
+      <br/>
+
+
     </>
   )
 }

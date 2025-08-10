@@ -2,6 +2,7 @@ import React from 'react'
 import RotatingText from './visuals/RotatingText.jsx'
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa'
 import StarBorder from './visuals/StarBorder.jsx'
+
 const Introduction = () => {
 
   const CV_URL = import.meta.env.VITE_CV_URL
@@ -9,7 +10,7 @@ const Introduction = () => {
   return (
     <div className={`container flex gap-1 h-[calc(100vh-160px)]`}>
       {/*left*/}
-      <div className="w-1/2 text-8xl font-bold text-white flex flex-col justify-center">
+      <div className="w-1/2 text-8xl font-bold text-white flex flex-col justify-center relative z-2">
         <h1>Hi!</h1>
         <div className="inline-flex gap-1 items-center">
           <p>I'm</p>

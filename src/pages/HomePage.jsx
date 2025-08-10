@@ -9,6 +9,12 @@ const HomePage = () => {
 
   const navRef = useRef(null)
   const [navHeight, setNavHeight] = useState(0)
+  const [hideLeft, setHideLeft] = useState(false)
+
+  const handleClickNav = (e, id) => {
+    document.getElementById(id)?.scrollIntoView({
+    })
+  }
 
   useEffect(() => {
     if (navRef.current) {
@@ -16,11 +22,24 @@ const HomePage = () => {
     }
   }, [])
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!navRef.current) return
+      if (window.scrollY > navHeight) {
+        setHideLeft(true)
+      } else {
+        setHideLeft(false)
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
     <div>
       <Lanyard position={[0, 0, 15]} gravity={[0, -40, 0]} fov={20}/>
       {/*background-galaxy*/}
-      <div style={{ width: '100%', height: "100%", position: 'fixed', top: 0,left: 0, zIndex: -1 }}>
+      <div style={{ width: '100%', height: '100%', position: 'fixed', top: 0, left: 0, zIndex: -1 }}>
         <Galaxy mouseRepulsion={true}
                 density={1.5}
                 glowIntensity={0.8}
@@ -30,20 +49,26 @@ const HomePage = () => {
         />
       </div>
       {/*header*/}
-      <nav ref={navRef} className="container flex items-center md:justify-between justify-center px-6 py-4 fixed top-0 left-0 right-0 z-50">
+      <nav ref={navRef}
+           className={`container flex items-center fixed top-2 left-0 right-0 z-10 ${hideLeft ? 'md:justify-center' : 'md:justify-between'}`}
+           id={'introduction'}>
         {/*left*/}
         <GradientText
           colors={['#4F46E5', '#9333EA', '#06B6D4', '#9333EA', '#4F46E5']}
           animationSpeed={3}
           showBorder={false}
-          className="text-7xl md:text-9xl md:ml-0 font-bold"
+          className={`text-7xl md:text-9xl md:ml-0 font-bold ${hideLeft ? 'hidden' : ''}`}
         >
           <p>Portfolio</p>
         </GradientText>
 
         {/*right*/}
-        <div className="hidden md:flex items-center gap-6 ml-7 text-4xl font-semibold ">
-          <a href="#" className="relative overflow-hidden group">
+        <div
+          className={`hidden md:flex items-center gap-6 text-4xl font-semibold ${hideLeft ? 'bg-gray-500/30 rounded-md p-2 text-5xl duration-1000' : 'duration-500'}`}>
+          <a onClick={() => {
+            scrollTo(0,0)
+            }
+          } className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Introduction" disabled={false} speed={1.5} className=""/>
           </span>
@@ -52,7 +77,9 @@ const HomePage = () => {
             Introduction
           </span>
           </a>
-          <a href="#" className="relative overflow-hidden group">
+          <a onClick={(e) => {
+            handleClickNav(e, 'introduction')
+          }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="About me" disabled={false} speed={1.5} className=""/>
           </span>
@@ -61,7 +88,9 @@ const HomePage = () => {
               About me
           </span>
           </a>
-          <a href="#" className="relative overflow-hidden group">
+          <a onClick={(e) => {
+            handleClickNav(e, 'introduction')
+          }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Project" disabled={false} speed={1.5} className=""/>
           </span>
@@ -70,7 +99,9 @@ const HomePage = () => {
               Project
           </span>
           </a>
-          <a href="#" className="relative overflow-hidden group">
+          <a onClick={(e) => {
+            handleClickNav(e, 'introduction')
+          }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Contact" disabled={false} speed={1.5} className=""/>
           </span>

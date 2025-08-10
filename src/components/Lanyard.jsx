@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { Canvas, extend, useFrame } from '@react-three/fiber';
@@ -16,7 +15,7 @@ extend({ MeshLineGeometry, MeshLineMaterial });
 
 export default function Lanyard({ position = [0, 0, 30], gravity = [0, -40, 0], fov = 20, transparent = true }) {
   return (
-    <div className="absolute z-0 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
+    <div className="absolute z-1 w-full h-screen flex justify-center items-center transform scale-100 origin-center">
       <Canvas
         camera={{ position: position, fov: fov }}
         gl={{ alpha: transparent }}
