@@ -10,12 +10,11 @@ const Introduction = () => {
     <div className={`container flex gap-1 h-[calc(100vh-128px)]`}>
       {/*left*/}
       <div className="w-1/2 text-8xl font-bold text-white flex flex-col justify-center relative z-2">
-        <h1>Hi!</h1>
-        <div className="inline-flex gap-1 items-center">
-          <p>I'm</p>
+        <div className="items-center">
+          <p>Hi! I am</p>
           <RotatingText
-            texts={[' Minh Kha ', 'Developer']}
-            mainClassName="inline-flex p-2 bg-primary rounded-lg"
+            texts={['Le Nguyen Minh Kha', 'Back-end Developer']}
+            mainClassName="p-2 bg-primary rounded-lg text-7xl w-[41vw] h-[9.9vh]"
             staggerFrom={'last'}
             initial={{ y: '100%' }}
             animate={{ y: 0 }}

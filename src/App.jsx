@@ -4,34 +4,6 @@ function App () {
   return (
     <>
       <HomePage/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <br/> <br/>
-      <br/>
-      <br/>
-      <br/> <br/>
-      <br/>
-      <br/>
-      <br/> <br/>
-      <br/>
-      <br/>
-      <br/> <br/>
-      <br/>
-      <br/>
-      <br/>
-
-
     </>
   )
 }

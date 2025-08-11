@@ -33,42 +33,40 @@ const AboutMe = () => {
 
   return (
     <div className={'container h-[100vh] pt-28'} id="aboutMe">
-      <div className={'w-full text-center'}>
-        <p className={'text-5xl text-white font-bold'}>About me</p>
-      </div>
-      <div className={'flex flex-row items-start flex-wrap h-2/3 mt-10'}>
-        <div className={'w-1/4 flex flex-col items-center h-full'}>
+      <div className={'flex flex-row items-start flex-wrap mt-10'}>
+        <div className={'w-1/3 flex flex-col items-center h-full'}>
           <ProfileCard
-            name="Minh Kha"
-            title="Software Engineer"
-            handle="emkay"
-            status="Online"
+            handle="Le Nguyen Minh Kha"
+            status="Back-end Developer"
             avatarUrl={assets.avatar}
             showUserInfo={true}
             enableTilt={true}
             enableMobileTilt={false}
             className={'w-fit ml-0'}
             iconUrl={assets.icon_code}
+            onContactClick={(e) => {
+              document.getElementById('contact').scrollIntoView({})
+            }}
           />
-          <div className={'w-full mt-5 text-white '}>
-            <p className="text-2xl font-bold text-red-500">
-              As a developer,
-            </p>
-            <TextType
-              text={[
-                'I paint with code, so every product is a masterpiece.',
-                'I code like an artist, so ideas become art.',
-                'I turn logic into beauty, so technology feels human.'
-              ]}
-              typingSpeed={75}
-              pauseDuration={2000}
-              showCursor={true}
-              cursorCharacter="|"
-            />
-          </div>
+          {/*<div className={'w-full mt-5 text-white '}>*/}
+          {/*  <p className="text-2xl font-bold text-red-500">*/}
+          {/*    As a developer,*/}
+          {/*  </p>*/}
+          {/*  <TextType*/}
+          {/*    text={[*/}
+          {/*      'I paint with code, so every product is a masterpiece.',*/}
+          {/*      'I code like an artist, so ideas become art.',*/}
+          {/*      'I turn logic into beauty, so technology feels human.'*/}
+          {/*    ]}*/}
+          {/*    typingSpeed={75}*/}
+          {/*    pauseDuration={2000}*/}
+          {/*    showCursor={true}*/}
+          {/*    cursorCharacter="|"*/}
+          {/*  />*/}
+          {/*</div>*/}
         </div>
-        <div className={'w-3/4 flex flex-col items-center pl-10 gap-10'}>
-          <div>
+        <div className={'w-2/3 flex flex-col items-center pl-10 gap-10'}>
+          <div className={'w-full'}>
             <p className="text-4xl font-bold text-white mb-4">My Skills</p>
             <div className="overflow-hidden w-full relative max-w-6xl mx-auto pt-10" onMouseEnter={() => setStopScroll(true)}
                  onMouseLeave={() => setStopScroll(false)}>
@@ -92,7 +90,7 @@ const AboutMe = () => {
           </div>
           <div className={'h-[500px] w-full'}>
             <p className="text-4xl font-bold text-white mb-4">My Hobbies</p>
-            <div className={'flex flex-row gap-10 justify-center pt-10'} >
+            <div className={'flex flex-row justify-between pt-10'} >
               <PixelCard variant="blue">
                 <div className={'absolute flex flex-col items-center justify-center top-0 bottom-0'}>
                   <img src={assets.icon_code2} alt={'react'} className={'w-36 h-36'}/>
@@ -115,8 +113,6 @@ const AboutMe = () => {
           </div>
         </div>
       </div>
-
-
     </div>
   )
 }

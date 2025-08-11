@@ -33,7 +33,6 @@ const Project = () => {
   return (
     <div className={'h-[100vh]'} id="project">
       <div style={{position: 'relative'}} className={'text-white'}>
-        <p className={'text-5xl text-white font-bold absolute right-0 left-0 top-14 text-center'}>Project</p>
         <InfiniteMenu  items={items}/>
       </div>
     </div>

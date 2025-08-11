@@ -6,6 +6,7 @@ import Introduction from '../components/Introduction.jsx'
 import Lanyard from '../components/visuals/Lanyard.jsx'
 import AboutMe from '../components/AboutMe.jsx'
 import Project from '../components/Project.jsx'
+import Contact from '../components/Contact.jsx'
 
 const HomePage = () => {
 
@@ -74,9 +75,9 @@ const HomePage = () => {
             <ShinyText text="Introduction" disabled={false} speed={1.5} className=""/>
           </span>
             <span
-              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-accent1 p-1">
-            Introduction
-          </span>
+              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-red-500 p-1">
+              Introduction
+            </span>
           </a>
           <a onClick={(e) => {
             handleClickNav(e, 'aboutMe')
@@ -85,29 +86,29 @@ const HomePage = () => {
             <ShinyText text="About me" disabled={false} speed={1.5} className=""/>
           </span>
             <span
-              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-accent1 p-1">
+              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-red-500 p-1">
               About me
           </span>
           </a>
           <a onClick={(e) => {
-            handleClickNav(e, 'introduction')
+            handleClickNav(e, 'project')
           }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Project" disabled={false} speed={1.5} className=""/>
           </span>
             <span
-              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-accent1 p-1">
+              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-red-500 p-1">
               Project
           </span>
           </a>
           <a onClick={(e) => {
-            handleClickNav(e, 'introduction')
+            handleClickNav(e, 'contact')
           }} className="relative overflow-hidden group cursor-pointer">
           <span className="block group-hover:-translate-y-full transition-transform duration-300 p-1">
             <ShinyText text="Contact" disabled={false} speed={1.5} className=""/>
           </span>
             <span
-              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-accent1 p-1">
+              className="block absolute top-full left-0 group-hover:translate-y-[-100%] transition-transform duration-300 text-red-500 p-1">
             Contact
           </span>
           </a>
@@ -118,6 +119,7 @@ const HomePage = () => {
         <Introduction/>
         <AboutMe/>
         <Project/>
+        <Contact/>
       </div>
     </div>
   )
