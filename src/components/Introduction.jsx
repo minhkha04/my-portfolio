@@ -14,7 +14,7 @@ const Introduction = () => {
           <p>Hi! I am</p>
           <RotatingText
             texts={['Le Nguyen Minh Kha', 'Back-end Developer']}
-            mainClassName="p-2 bg-primary rounded-lg text-7xl w-[41vw] h-[9.9vh]"
+            mainClassName="p-2 bg-primary rounded-lg text-7xl w-[800px] h-[9.9vh]"
             staggerFrom={'last'}
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
