@@ -1,7 +1,6 @@
 import React from 'react'
 import ProfileCard from './visuals/ProfileCard/ProfileCard.jsx'
 import { assets } from '../assets/assets.js'
-import TextType from './visuals/TextType.jsx'
 import PixelCard from './visuals/PixelCard.jsx'
 
 const AboutMe = () => {
@@ -48,22 +47,6 @@ const AboutMe = () => {
               document.getElementById('contact').scrollIntoView({})
             }}
           />
-          {/*<div className={'w-full mt-5 text-white '}>*/}
-          {/*  <p className="text-2xl font-bold text-red-500">*/}
-          {/*    As a developer,*/}
-          {/*  </p>*/}
-          {/*  <TextType*/}
-          {/*    text={[*/}
-          {/*      'I paint with code, so every product is a masterpiece.',*/}
-          {/*      'I code like an artist, so ideas become art.',*/}
-          {/*      'I turn logic into beauty, so technology feels human.'*/}
-          {/*    ]}*/}
-          {/*    typingSpeed={75}*/}
-          {/*    pauseDuration={2000}*/}
-          {/*    showCursor={true}*/}
-          {/*    cursorCharacter="|"*/}
-          {/*  />*/}
-          {/*</div>*/}
         </div>
         <div className={'w-2/3 flex flex-col items-center pl-10 gap-10'}>
           <div className={'w-full'}>
