@@ -31,9 +31,9 @@ const Project = () => {
   ];
 
   return (
-    <div className={'h-[100vh] mt-[200px]'} id="project">
+    <div className={'h-[100vh] lg:mt-[200px] mt-[1200px] mb-32 lg:mb-0'} id="project">
       <div style={{position: 'relative'}} className={'text-white'}>
-        <InfiniteMenu  items={items}/>
+        <InfiniteMenu  items={items} act/>
       </div>
     </div>
   )

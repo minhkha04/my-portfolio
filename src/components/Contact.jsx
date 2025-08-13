@@ -3,9 +3,9 @@ import TrueFocus from './visuals/TrueFocus.jsx'
 
 const Contact = () => {
   return (
-    <div id={'contact'} className="flex relative flex-row items-center gap-28 h-screen p-10 container">
-      <div className={'w-1/2'}>
-        <div className={'text-white ml-0 w-full'}>
+    <div id={'contact'} className="flex relative lg:flex-row flex-col items-center lg:gap-28 h-screen p-10 container">
+      <div className={'lg:w-1/2 w-full'}>
+        <div className={'text-white lg:ml-0 w-full'}>
           <TrueFocus
             sentence="LET'S CONNECT"
             manualMode={false}
@@ -14,7 +14,7 @@ const Contact = () => {
             animationDuration={0.5}
             pauseBetweenAnimations={1}
           />
-          <p className={'pt-10 text-white text-justify text-3xl'}>
+          <p className={'pt-10 text-white lg:text-justify lg:text-3xl hidden lg:block'}>
             I am open to collaborating with valued partners on promising new initiatives. If you have a strategic idea,
             a specialized requirement, or a vision you would like to bring to life, please feel free to get in touch.
             Whether it’s a short-term engagement or a large-scale implementation, I prioritize listening, understanding
@@ -22,8 +22,8 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className={'w-1/2'}>
-        <div className="text-4xl w-full flex flex-col justify-center gap-10 h-full">
+      <div className={'lg:w-1/2 w-full'}>
+        <div className="lg:text-4xl text-sm w-full flex flex-col justify-center gap-10 h-full lg:pt-0 pt-10">
           <a href="mailto:lenguyenminhkha1606@gmail.com"
              className="flex items-center gap-3 rounded-xl bg-gradient-to-r from-purple-900/70 to-indigo-900/70 border border-purple-500/50 p-4 text-white shadow-lg transition duration-300 ease-out hover:scale-105 hover:-translate-y-1 hover:border-cyan-400 hover:shadow-[0_0_25px_rgba(0,255,255,0.7),0_0_50px_rgba(122,92,255,0.5)]">
             <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10 text-red-500" fill="none" viewBox="0 0 24 24"

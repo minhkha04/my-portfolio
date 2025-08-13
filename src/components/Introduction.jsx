@@ -7,14 +7,14 @@ const Introduction = () => {
 
   const CV_URL = import.meta.env.VITE_CV_URL
   return (
-    <div className={`container flex gap-1 h-[calc(100vh-128px)]`}>
+    <div className={`container flex flex-col lg:flex-row gap-8 items-center h-auto lg:h-[calc(100vh-128px)] px-4 py-10`}>
       {/*left*/}
-      <div className="w-1/2 text-8xl font-bold text-white flex flex-col justify-center relative z-2">
+      <div className="lg:w-1/2 w-full text-8xl font-bold text-white flex flex-col justify-center relative z-2 py-20 sm:py-0">
         <div className="items-center">
-          <p>Hi! I am</p>
+          <p className={'text-5xl lg:text-8xl font-bold'}>Hi! I am</p>
           <RotatingText
             texts={['Le Nguyen Minh Kha', 'Back-end Developer']}
-            mainClassName="p-2 bg-primary rounded-lg text-7xl w-[800px] h-[9.9vh]"
+            mainClassName="p-2 bg-primary rounded-lg text-[31.5px] sm:text-5xl md:text-7xl lg:text-7xl lg:w-[800px] lg:h-[9.9vh] w-[90vw] h-[8vh]"
             staggerFrom={'last'}
             initial={{ y: '100%' }}
             animate={{ y: 0 }}
@@ -29,17 +29,17 @@ const Introduction = () => {
           <a href="https://github.com/minhkha04"
              target="_blank"
              rel="noopener noreferrer">
-            <FaGithub size={80}/>
+            <FaGithub size={60}/>
           </a>
           <a href="https://www.facebook.com/imMinhKha"
              target="_blank"
              rel="noopener noreferrer">
-            <FaFacebook size={80}/>
+            <FaFacebook size={60}/>
           </a>
           <a href="https://www.linkedin.com/in/l%C3%AA-nguy%E1%BB%85n-minh-kha-b805a9279"
              target="_blank"
              rel="noopener noreferrer">
-            <FaLinkedin size={80}/>
+            <FaLinkedin size={60}/>
           </a>
         </div>
 
