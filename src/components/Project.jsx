@@ -5,7 +5,7 @@ const Project = () => {
 
   const items = [
     {
-      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1754852646/pet_feed_oxhw8s.png',
+      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1756279139/iot-1_r3tb0m.png',
       link: 'https://youtu.be/vp49y4P6AcY',
       title: 'Based Smart Pet Feeding System',
       linkGit: 'https://github.com/minhkha04/iot-pet-feeder',
@@ -13,7 +13,7 @@ const Project = () => {
       techStack: 'Arduino C++, Blynk, HX711, Servo.h.'
     },
     {
-      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1754852098/infertility_wzf0c3.png',
+      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1756278512/infertility_uax060.png',
       link: 'https://techleaf.pro/projects/infertility-system/',
       linkGit: 'https://github.com/minhkha04/infertility-system',
       title: 'Infertility Treatment Management and Monitoring System',
@@ -21,7 +21,7 @@ const Project = () => {
       techStack: 'ReactJs, Java, Spring Boot, MySQL, Docker'
     },
     {
-      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1754853363/auto_car_sn87k1.png',
+      image: 'https://res.cloudinary.com/di6hi1r0g/image/upload/v1756278884/auto-car_lplwia.png',
       link: 'https://techleaf.pro/',
       title: 'AutoCar Garage Management System',
       linkGit: 'https://github.com/minhkha04/auto-car',
